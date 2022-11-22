@@ -1,6 +1,7 @@
 import "./App.css";
 import Display from "./components/Display";
 import Subscribers from "./components/Subscribers";
+import Views from "./components/Views";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
         <h3>React Redux Basic</h3>
       </div>
       <Subscribers />
+      <hr />
+      <Views />
       <hr />
       <Display />
     </div>
