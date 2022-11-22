@@ -15,9 +15,9 @@ function Display({ subCount }) {
 }
 
 // mapStateToProps?: Function
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ rootSubs }) => {
   return {
-    subCount: state.subCount,
+    subCount: rootSubs.subCount,
   };
 };
 

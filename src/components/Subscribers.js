@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addSubscriber } from "../redux/subscribers/actions";
+// import { addSubscriber } from "../redux/subscribers/actions";
+import { addSubscriber } from "../redux"; // "../redux/index.js"
 
 function Subscribers({ subCount, addSubscriber }) {
   return (
@@ -17,9 +18,9 @@ function Subscribers({ subCount, addSubscriber }) {
 }
 
 // mapStateToProps?: Function
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ rootSubs }) => {
   return {
-    subCount: state.subCount,
+    subCount: rootSubs.subCount,
   };
 };
 // mapDispatchToProps?: Function | Object
