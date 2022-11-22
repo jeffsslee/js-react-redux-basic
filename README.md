@@ -2,6 +2,8 @@
 
 ## UI Preview
 
+<img src="./public/appui1.png" width="400" />
+
 ## JS libruary
 
 fro react app
